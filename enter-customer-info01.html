@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEACE CAR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-white">
+    <header class="header-sub block">
+      <div class="align triple bg-f8 border-bottom">
+        <a class="btn-back" href="javascript:window.history.back();"></a>
+        <h2>고객정보 입력</h2>
+      </div>
+    </header>
+    <main class="main pb150">
+      <section class="content">
+        <div class="text-type5 mt36">사업자 정보</div>
+        <div class="text-type4 fz14 fw400 mt10">사업자 등록 시 제출한 정보를 입력해주세요.</div>
+        <div class="input-type input-type1 mt30">
+          <label for="txt1">성명</label>
+          <input type="text" id="txt1" placeholder="성명을 입력해주세요">
+        </div>
+        <div class="input-type input-type1">
+          <label for="txt2">성별</label>
+          <div class="select-wrap">
+            <select class="select2" name="" id="txt2">
+              <option value="">남성</option>
+              <option value="">여성</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-type input-type1">
+          <label for="txt3">나이</label>
+          <input type="number" id="txt3" value="29" placeholder="나이를 입력해주세요">
+        </div>
+        <div class="fixed-bottom btn-wrap">
+          <a class="btn-main-empty txt-center" href="javascript:window.history.back();">이전</a>
+          <button class="btn-main-on" type="button" onclick="location.href='enter-customer-info02.html'">다음</button>
+        </div>
+      </section>
+    </main>
+
+  </body>
+  <script src="js/button.js"></script>
+  <script src="js/navFoot.js"></script>
+</html>
