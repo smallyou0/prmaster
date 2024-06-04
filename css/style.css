@@ -411,6 +411,9 @@ legend,
 .mt30 {
   margin-top: 3.0rem;
 }
+.mt32 {
+  margin-top: 3.2rem;
+}
 .mt33 {
   margin-top: 3.3rem;
 }
@@ -431,6 +434,9 @@ legend,
 }
 .mt54 {
   margin-top: 5.4rem;
+}
+.ml5 {
+  margin-left: .5rem;
 }
 .ml6 {
   margin-left: .6rem;
@@ -4147,9 +4153,23 @@ body.popup-open::before {
       gap: 8px;
     }
     & .title {
-      color: #000;
+      position: relative;
+      color: var(--black);
       font-size: 13px;
       font-weight: 600;
+      &.ico1 {
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: -8.5px;
+          transform: translateY(-50%);
+          content: "";
+          display: block;
+          width: 2px;
+          height: 10px;
+          background: var(--black);
+        }
+      }
     }
     & .cont {
       color: #000;
@@ -4158,6 +4178,9 @@ body.popup-open::before {
       font-weight: 400;
       &.left {
         text-align: left;
+      }
+      &.fw600 {
+        font-weight: 600;
       }
     }
   }
@@ -4215,6 +4238,27 @@ body.popup-open::before {
     }
     
   }
+}
+.list-type8 {
+  max-width: 290px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 10px;
+  & li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 10px;
+    max-width: 80px;
+    height: 80px;
+    padding: 8px;
+  }
+}
+.radius-10 {
+  border-radius: 10px;
 }
 
 
@@ -4464,6 +4508,27 @@ input[type="number"]::-webkit-inner-spin-button {
       
     }
   }
+  & .img-wrap {
+    width: 100%;
+    max-width: 287px;
+    margin: 0 auto;
+    @media screen and (max-width:400px) {
+      /* 600px 이하 해상도 */
+      &.align {
+        display: block;
+      }
+      & img:nth-child(2) {
+        margin-top: 20px;
+      }
+     }
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &.ico-logo {
+    background: url(../images/ico_business.svg) no-repeat right 16px top 18px / 77px;
+  }
 }
 
 .vehicle-management {
@@ -4491,6 +4556,13 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 500;
     text-decoration-line: underline;
   }
+}
+.link {
+  display: block;
+  color: var(--gray97);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration-line: underline;
 }
 .select-wrap {
   position: relative;

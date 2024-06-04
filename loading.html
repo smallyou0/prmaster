@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <script type="text/javascript">
+      // 3초 후에 b.html로 이동
+      function redirectToB() {
+          setTimeout(function() {
+              window.location.href = "marketing-solution.html";
+          }, 2000); // 3000 밀리초 = 3초
+      }
+  </script>
   </head>
-  <body class="bg-white">
+  <body class="bg-white" onload="redirectToB()">
     <main class="main pt0">
       <section class="content">
         <div class="logo-wrap align center vm column">
