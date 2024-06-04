@@ -307,6 +307,7 @@ legend,
   --blue00: #0066ff;
   --blue84: #84b5ff;
   --gray40: #404f65;
+  --gray44: #444444;
   --gray58: #58687f;
   --gray97: #9799a5;
   --gray9f: #9fa9da;
@@ -415,6 +416,9 @@ legend,
 }
 .mt36 {
   margin-top: 3.6rem;
+}
+.mt40 {
+  margin-top: 4rem;
 }
 .mt42 {
   margin-top: 4.4rem;
@@ -770,8 +774,13 @@ legend,
 .main {
   padding-top: 5.4rem;
 }
-.main.pt20 {
-  padding-top: 2.0rem;
+.main {
+  &.pt20 {
+    padding-top: 2.0rem;
+  }
+  &.pt0 {
+    padding-top: 0;
+  }
 }
 .content {
   position: relative;
@@ -1750,11 +1759,20 @@ button {
   &.fw500 {
     font-weight: 400;
   }
+  &.lh155 {
+    line-height: 155%;
+  }
 }
 .text-type5 { 
   color: var(--black);
   font-size: 1.8rem;
   font-weight: 700;
+}
+.text-type6 { 
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 150%; 
 }
 .txt-center {
   text-align: center;
@@ -4517,10 +4535,24 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .logo-wrap {
   height: calc(100vh);
-  gap: 12.6rem;
+  &.gap-1 {
+    gap: 12.6rem;
+  }
 }
+
 .btn-wrap {
   display: grid;
   grid-template-columns: minmax(100px, auto) 1fr;  
   gap: 16px;
+}
+.progress {
+  width: 100%;
+  height: 4px;
+  background: var(--grayd9);
+  & i {
+    display: block;
+    width: 80%;
+    height: 4px;
+    background: var(--navy1d);
+  }
 }
