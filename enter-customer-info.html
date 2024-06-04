@@ -22,18 +22,18 @@
         <div class="text-type4 fz14 fw400 mt10">주된 사업 아이템을 기준으로 선택해주세요.</div>
         <div class="bg-eb radius-10 mt10">
           <ul class="list-type8">
-            <li class="text-type3 txt-center">음,식료품</li>
-            <li class="text-type3 txt-center">섬유, 의류</li>
-            <li class="text-type3 txt-center">신발 및 가죽제품</li>
-            <li class="text-type3 txt-center">교육 서비스</li>
-            <li class="text-type3 txt-center">숙박업</li>
-            <li class="text-type3 txt-center">여가 용품</li>
-            <li class="text-type3 txt-center">영상, 오디오및 예술</li>
-            <li class="text-type3 txt-center">컴퓨터 프로그래밍</li>
-            <li class="text-type3 txt-center">금융 및 보험 관련</li>
-            <li class="text-type3 txt-center">헬스케어</li>
-            <li class="text-type3 txt-center">스포츠</li>
-            <li class="text-type3 txt-center">기타</li>
+            <li class="btn-item text-type3 txt-center active">음,식료품</li>
+            <li class="btn-item text-type3 txt-center">섬유, 의류</li>
+            <li class="btn-item text-type3 txt-center">신발 및 가죽제품</li>
+            <li class="btn-item text-type3 txt-center">교육 서비스</li>
+            <li class="btn-item text-type3 txt-center">숙박업</li>
+            <li class="btn-item text-type3 txt-center">여가 용품</li>
+            <li class="btn-item text-type3 txt-center">영상, 오디오및 예술</li>
+            <li class="btn-item text-type3 txt-center">컴퓨터 프로그래밍</li>
+            <li class="btn-item text-type3 txt-center">금융 및 보험 관련</li>
+            <li class="btn-item text-type3 txt-center">헬스케어</li>
+            <li class="btn-item text-type3 txt-center">스포츠</li>
+            <li class="btn-item text-type3 txt-center">기타</li>
           </ul>
         </div>
         <div class="fixed-bottom">
@@ -41,6 +41,12 @@
         </div>
       </section>
     </main>
+    <script>
+      $('.btn-item').click(function () {
+        $('.btn-item').removeClass('active');
+        $(this).toggleClass('active');
+      })
+    </script>
 
   </body>
   <script src="js/button.js"></script>

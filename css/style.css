@@ -305,12 +305,15 @@ legend,
   --navy06: #06135d;
   --navy26: #263482;
   --blue00: #0066ff;
+  --blue04: #0459FF;
   --blue84: #84b5ff;
   --gray40: #404f65;
   --gray44: #444444;
   --gray58: #58687f;
+  --gray66: #666666;
   --gray97: #9799a5;
   --gray9f: #9fa9da;
+  --grayaa: #aaaaaa;
   --graya9: #a9b6ca;
   --grayb4: #b4b9d7;
   --grayd3: #d3e4ff;
@@ -1144,8 +1147,8 @@ button {
 .btn-main-empty {
   padding: 1.4rem 2.0rem;
   background: var(--white);
-  color: var(--blue00);
-  border: .1rem solid var(--blue00);
+  color: var(--gray66);
+  border: .1rem solid var(--gray66);
   font-size: 1.4rem;
   font-weight: 700;
   border-radius: 1.0rem;
@@ -1344,7 +1347,7 @@ button {
 }
 
 .input-type input::placeholder {
-  color: var(--graya9);
+  color: var(--grayaa);
   font-size: 1.4rem;
   font-weight: 500;
 }
@@ -4255,6 +4258,13 @@ body.popup-open::before {
     max-width: 80px;
     height: 80px;
     padding: 8px;
+    box-sizing: border-box;
+    &.btn-item {
+      &.active {
+        box-sizing: border-box;
+        outline: 2px solid var(--blue04);
+      }
+    }
   }
 }
 .radius-10 {
