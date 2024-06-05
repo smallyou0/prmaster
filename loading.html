@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <script type="text/javascript">
-      // 3초 후에 b.html로 이동
       function redirectToB() {
+          const progressBar = document.getElementById('progress-bar');
+          
+          // 프로그래스 바 애니메이션 시작
+          setTimeout(() => {
+              progressBar.style.width = '100%';
+          }, 100); // 약간의 딜레이를 주어 애니메이션이 확실히 동작하게 함
+
+          // 페이지 리다이렉션
           setTimeout(function() {
               window.location.href = "marketing-solution.html";
-          }, 2000); // 3000 밀리초 = 3초
+          }, 1500); // 2000 밀리초 = 2초
       }
   </script>
   </head>
@@ -27,7 +34,7 @@
             맞춤 마케팅 솔루션을 도출 중입니다.
           </div>
           <div class="progress mt40">
-            <i></i>
+            <i id="progress-bar"></i>
           </div>
           <div class="text-type6 txt-center mt40">
             PR마스터는 온라인 마케팅 경력으로 다져진 실력과<br>

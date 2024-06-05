@@ -4633,8 +4633,9 @@ input[type="number"]::-webkit-inner-spin-button {
   background: var(--grayd9);
   & i {
     display: block;
-    width: 80%;
+    width: 0;
     height: 4px;
     background: var(--navy1d);
+    transition: width 2s linear;
   }
 }
